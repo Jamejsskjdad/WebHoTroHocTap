@@ -12,7 +12,8 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 const DATA_DIR = path.join(__dirname, 'data');
-const TYPES = ['video', 'comic', 'flashcard', 'game', 'experiment', 'quizze'];
+// Đổi thành:
+const TYPES = ['videos', 'comics', 'flashcards', 'games', 'experiments', 'quizzes'];
 
 // Đảm bảo thư mục tồn tại
 function ensureFolder(folderPath) {
