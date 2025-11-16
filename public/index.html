@@ -1,23 +1,27 @@
 <!doctype html>
 <html lang="vi">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website học KHTN lớp 8</title>
-  <script src="/_sdk/element_sdk.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <script src="page.js"></script>
-  <style>@view-transition { navigation: auto; }</style>
-  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
-  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
- </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website học KHTN lớp 8</title>     
+    <!-- Nếu vẫn cần SDK thì giữ lại, không thì có thể xóa 2 dòng dưới -->
+    <script src="/_sdk/element_sdk.js"></script>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>      
+    <!-- Tailwind nên load TRƯỚC CSS của bạn -->
+    <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>     
+    <!-- CSS của bạn load SAU cùng để override tailwind -->
+    <link rel="stylesheet" href="/style.css">      
+    <!-- JS của bạn để cuối và dùng defer để chắc chắn DOM đã sẵn sàng -->
+    <script src="/page.js" defer></script>
+    <style>@view-transition { navigation: auto; }</style>
+</head>   
  <body><!-- Floating Background Icons -->
   <div id="floatingIcons"></div><!-- Header -->
   <header>
    <div class="header-content">
     <div>
      <div class="logo" id="siteTitle">
-      Website Học Tập
+      Website Học Tập KHTN Lớp 8
      </div>
      <div class="subtitle" id="siteSubtitle">
       Học tập thông minh, phát triển toàn diện

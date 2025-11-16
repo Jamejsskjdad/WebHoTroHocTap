@@ -496,3 +496,36 @@ footer {
         height: 400px;
     }
 }
+/* ------------------------
+   ENLARGE CARD SIZE
+   ------------------------ */
+/* Tăng kích thước tổng thể */
+.card {
+    padding: 35px !important;            /* tăng padding */
+    border-radius: 20px !important;      /* bo góc lớn hơn */
+    transform: scale(1.05);              /* phóng to card 5% */
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* Giảm hiệu ứng hover để không bị giật */
+.card:hover {
+    transform: scale(1.07);
+}
+
+/* Tăng font chữ */
+.card-title {
+    font-size: 24px !important;          /* trước 20px */
+}
+
+.card-description {
+    font-size: 16px !important;          /* trước 14px */
+    line-height: 1.6;
+}
+
+/* Tăng nút bấm */
+.card-btn {
+    font-size: 16px !important;          /* chữ lớn hơn */
+    padding: 14px 25px !important;       /* nút dày hơn */
+    border-radius: 25px !important;
+}
